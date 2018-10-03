@@ -31,3 +31,8 @@ parseRanged :: Parser i a -> Parser i (Range Pos, a)
   + `instance Push2 (Cofree Maybe) Either`
 - Commented notes on using the above to parse GADTs
 
+
+# Docs
+
+Haddock generated documentation may be found [here](https://michaeljklein.github.io/push-gadt-parse-proto/)
+
