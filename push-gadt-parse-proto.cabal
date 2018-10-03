@@ -1,0 +1,71 @@
+-- This file has been generated from package.yaml by hpack version 0.28.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: e2ca869a514d1d435613cfb563fff2e9994d6a0d2d98094b7bd66dc30f191445
+
+name:           push-gadt-parse-proto
+version:        0.1.0.0
+description:    Please see the README on Github at <https://github.com/michaeljklein/push-gadt-parse-proto#readme>
+homepage:       https://github.com/michaeljklein/push-gadt-parse-proto#readme
+bug-reports:    https://github.com/michaeljklein/push-gadt-parse-proto/issues
+author:         Michael J. Klein
+maintainer:     lambdamichael@gmail.com
+copyright:      2018 Michael J. Klein
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+cabal-version:  >= 1.10
+extra-source-files:
+    ChangeLog.md
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/michaeljklein/push-gadt-parse-proto
+
+library
+  exposed-modules:
+      Data.Attoparsec.Utils
+      Data.Range
+      Lib
+  other-modules:
+      Paths_push_gadt_parse_proto
+  hs-source-dirs:
+      src
+  build-depends:
+      QuickCheck
+    , attoparsec
+    , base >=4.7 && <5
+    , bytestring
+    , comonad
+    , containers
+    , free
+    , mtl
+    , random
+    , transformers
+    , utf8-string
+  default-language: Haskell2010
+
+test-suite push-gadt-parse-proto-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_push_gadt_parse_proto
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      QuickCheck
+    , attoparsec
+    , base >=4.7 && <5
+    , bytestring
+    , comonad
+    , containers
+    , free
+    , mtl
+    , push-gadt-parse-proto
+    , random
+    , transformers
+    , utf8-string
+  default-language: Haskell2010
